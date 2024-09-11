@@ -1,0 +1,9 @@
+<h1>generate-qr-code</h1>
+
+<form [formGroup]="input">
+    <label>value for qr code
+        <textarea [formControl]="input.controls.input"></textarea>
+    </label>
+    <button (click)="generateQrCode()">generateQrCode</button>
+</form>
+<canvas #qrcode></canvas>

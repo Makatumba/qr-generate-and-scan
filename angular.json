@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "qr-share": {
+    "qr-generate-and-scan": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/qr-share",
+            "outputPath": "dist/qr-generate-and-scan",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "qr-share:build:production"
+              "buildTarget": "qr-generate-and-scan:build:production"
             },
             "development": {
-              "buildTarget": "qr-share:build:development"
+              "buildTarget": "qr-generate-and-scan:build:development"
             }
           },
           "defaultConfiguration": "development"

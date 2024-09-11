@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'qr-share' title`, () => {
+  it(`should have the 'qr-generate-and-scan' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('qr-share');
+    expect(app.title).toEqual('qr-generate-and-scan');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, qr-share');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, qr-generate-and-scan');
   });
 });
